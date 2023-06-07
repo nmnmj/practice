@@ -7,7 +7,9 @@ export async function POST(req, res) {
     const body = await req.json()
     console.log("route.js working")
     await dbConnect()
-    await contactModel.create(body) 
+    // await contactModel.create(body) 
+    let doc = new contactModel(body)
+    let r = await doc.save()
     return NextResponse.json({
         message: "Message sent Successfully"
     },{

@@ -42,11 +42,11 @@ import mongoose from "mongoose";
 const MONGODB_URL = process.env.MONGODB_URL;
 
 const dbConnect = async () => {
+    let db_options ={
+        dbName: "nextUserdb"
+    }
   try {
-    const db = await mongoose.connect(MONGODB_URL, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    const db = await mongoose.connect(MONGODB_URL, db_options);
 
     console.log("MongoDB connected!");
   } catch (error) {

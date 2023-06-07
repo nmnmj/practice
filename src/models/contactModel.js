@@ -8,6 +8,7 @@ const contactSchema = new mongoose.Schema({
     timestamps:true
 })
 
-const contactModel =   mongoose.model("nextcontact", contactSchema) 
+const contactModel = mongoose.model("nextcontact", contactSchema) 
 
 export default contactModel
+

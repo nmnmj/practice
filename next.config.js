@@ -1,6 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    serverComponentsExternalPackages: ['mongoose'],
+    // experimental: {
+    //     appDir: true,
+    //     serverComponentsExternalPackages: ["mongoose"],
+    //     serverActions: true
+    // },
+    // serverComponentsExternalPackages: ["mongoose"],
+    // serverAction: true,
     images:{
         domains:[""]
     }

@@ -16,7 +16,7 @@ const Contact = () => {
     }
     console.log(adata)
     try {
-      const response = await fetch('/contact', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {"Content_Type": "application/json"},
         body: JSON.stringify(adata)
